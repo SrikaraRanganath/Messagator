@@ -15,7 +15,6 @@ import queue
 
 
 # initialisation 
-
 message_queue = queue.Queue()
 
 #GUI 
@@ -111,7 +110,7 @@ def interface(message_queue):
     #combo box1
     contact_combotext=tk.StringVar()
     contact_combotext.set('Type or enter Contact')
-    names=["Nitish2", "Kara", "Amodh"]
+    names=["Contact1", "Contact2", "Contact3"]
     box=ttk.Combobox(frame6, values=names, textvariable=contact_combotext)
     box.grid(row=0,column=0,sticky="nsew")  
     contact_combotext.trace('w', callback)
